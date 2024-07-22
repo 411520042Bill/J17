@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Edwards - Interactive Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="section-a">
+        <div id="particles-js"></div>
+        <h1 id="name-display">Bill Edwards</h1>
+    </div>
+    <div id="projects-title">
+        <h2>Projects</h2>
+        <p>Utilize the chat at the bottom left</p>
+    </div>
+    <div class="project-container">
+    <!-- Card 1 (repeat the structure for other cards) -->
+    <div class="project-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <h3 class="project-title">Data Visualization Project</h3>
+                <div class="image-carousel">
+                    <div class="carousel-container">
+                        <img src="image4.jpg" alt="Data Visualization 1" class="carousel-image active">
+                        <img src="image5.jpg" alt="Data Visualization 2" class="carousel-image">
+                        <img src="image6.jpg" alt="Data Visualization 3" class="carousel-image">
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">SVG</span>
+                </div>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </div>
+            </div>
+            <div class="card-back">
+                <h3 class="project-title">Data Visualization Project</h3>
+                <p class="project-description">This project focused on creating interactive data visualizations using D3.js and SVG. It showcases various chart types and data representation techniques.</p>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-ccw"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 (repeat the structure for other cards) -->
+    <div class="project-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <h3 class="project-title">Data Visualization Project</h3>
+                <div class="image-carousel">
+                    <div class="carousel-container">
+                        <img src="image4.jpg" alt="Data Visualization 1" class="carousel-image active">
+                        <img src="image5.jpg" alt="Data Visualization 2" class="carousel-image">
+                        <img src="image6.jpg" alt="Data Visualization 3" class="carousel-image">
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">SVG</span>
+                </div>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </div>
+            </div>
+            <div class="card-back">
+                <h3 class="project-title">Data Visualization Project</h3>
+                <p class="project-description">This project focused on creating interactive data visualizations using D3.js and SVG. It showcases various chart types and data representation techniques.</p>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-ccw"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Card 3 (repeat the structure for other cards) -->
+     <div class="project-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <h3 class="project-title">Mutiple course completetion</h3>
+                <div class="image-carousel">
+                    <div class="carousel-container">
+                        <img src="{{ url_for('static', filename='assets/Py100.jpg') }}" alt="100 days of code: The Complete Python Pro Bootcamp" class="carousel-image active">
+                        <img src="{{ url_for('static', filename='assets/SQL.jpg') }}" alt="SQL Course" class="carousel-image">
+                        <img src="{{ url_for('static', filename='assets/tableau.jpg') }}" alt="Tableau Course" class="carousel-image">
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">SVG</span>
+                </div>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </div>
+            </div>
+            <div class="card-back">
+                <h3 class="project-title">Mutiple course completetion</h3>
+                <p class="project-description">These couses taught me the fundamentals of programming, data manipulation, visualization, etc. They have broaden my world of view and made me more confident in the field of data analytics. I'll use the knowledges learned in these courses to help better understand data and better analyze them.</p>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-ccw"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Card 4 (repeat the structure for other cards) -->
+     <div class="project-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <h3 class="project-title">Data Visualization Project</h3>
+                <div class="image-carousel">
+                    <div class="carousel-container">
+                        <img src="image4.jpg" alt="Data Visualization 1" class="carousel-image active">
+                        <img src="image5.jpg" alt="Data Visualization 2" class="carousel-image">
+                        <img src="image6.jpg" alt="Data Visualization 3" class="carousel-image">
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">SVG</span>
+                </div>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </div>
+            </div>
+            <div class="card-back">
+                <h3 class="project-title">Data Visualization Project</h3>
+                <p class="project-description">This project focused on creating interactive data visualizations using D3.js and SVG. It showcases various chart types and data representation techniques.</p>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-ccw"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Card 5 (repeat the structure for other cards) -->
+     <div class="project-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <h3 class="project-title">Data Visualization Project</h3>
+                <div class="image-carousel">
+                    <div class="carousel-container">
+                        <img src="image4.jpg" alt="Data Visualization 1" class="carousel-image active">
+                        <img src="image5.jpg" alt="Data Visualization 2" class="carousel-image">
+                        <img src="image6.jpg" alt="Data Visualization 3" class="carousel-image">
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">SVG</span>
+                </div>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </div>
+            </div>
+            <div class="card-back">
+                <h3 class="project-title">Data Visualization Project</h3>
+                <p class="project-description">This project focused on creating interactive data visualizations using D3.js and SVG. It showcases various chart types and data representation techniques.</p>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-ccw"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Card 6 (repeat the structure for other cards) -->
+    <div class="project-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <h3 class="project-title">Data Visualization Project</h3>
+                <div class="image-carousel">
+                    <div class="carousel-container">
+                        <img src="image4.jpg" alt="Data Visualization 1" class="carousel-image active">
+                        <img src="image5.jpg" alt="Data Visualization 2" class="carousel-image">
+                        <img src="image6.jpg" alt="Data Visualization 3" class="carousel-image">
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">SVG</span>
+                </div>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </div>
+            </div>
+            <div class="card-back">
+                <h3 class="project-title">Data Visualization Project</h3>
+                <p class="project-description">This project focused on creating interactive data visualizations using D3.js and SVG. It showcases various chart types and data representation techniques.</p>
+                <div class="corner-fold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-ccw"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End of card container -->
+    <div class="pagination-controls">
+        <button class="pagination-button prev" disabled>Previous</button>
+        <button class="pagination-button next">Next</button>
+    </div>
+    <div id="chat-container">
+        <div id="chat-header">
+            Get to know me better. (AI might hallucinate)
+            <button id="minimize-chat">-</button>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type your message..." value="Tell me about yourself">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <button id="chat-icon" style="display: none;">💬</button>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <button id="theme-toggle" aria-label="Toggle theme">
+        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+    <footer>
+        <p>&copy; 2024 Bill Edwards. All rights reserved.</p>
+    </footer>
+</body>
+</html>
